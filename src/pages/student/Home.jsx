@@ -1,9 +1,13 @@
 import React from 'react'
-import Navbar from '../../components/student/Navbar'
+import Hero from '../../components/student/Hero'
+import Companies from '../../components/student/Companies'
+
 
 function Home() {
   return (
-    <div>
+    <div className='flex flex-col items-center space-y-7 text-center'>
+      <Hero />
+      <Companies />
     </div>
   )
 }
