@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, User, X } from "lucide-react";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
+import { AppContext } from "../../context/AppContext";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ function Navbar() {
 
   const { openSignIn } = useClerk();
   const { user } = useUser();
+  const { isEducator } = useContext(AppContext);
 
   return (
     <div className="flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 bg-white">
@@ -25,8 +27,10 @@ function Navbar() {
         <div className="flex items-center gap-5">
           {user && (
             <>
-              <button>Become Educator</button>|{" "}
-              <Link to="/my-enrollments">My Enrollments</Link>
+              <button onClick={() => navigate("/educator")} className="cursor-pointer">
+                {isEducator ? "Educator Dashboard" : "Become Educator"}
+              </button>
+              | <Link to="/my-enrollments">My Enrollments</Link>
             </>
           )}
         </div>
@@ -50,12 +54,14 @@ function Navbar() {
 
         {isOpen && (
           <div className="absolute top-12 right-2 w-64 bg-white shadow-lg rounded-md p-4 flex flex-col gap-4 z-50">
-             {user && (
-            <>
-              <button className="text-left">Become Educator</button>
-              <Link to="/my-enrollments">My Enrollments</Link>
-            </>
-          )}
+            {user && (
+              <>
+                <button onClick={() => navigate("/educator")} className="cursor-pointer">
+                  {isEducator ? "Educator Dashboard" : "Become Educator"}
+                </button>
+                | <Link to="/my-enrollments">My Enrollments</Link>
+              </>
+            )}
             {user ? (
               <div className="flex">
                 <UserButton />
