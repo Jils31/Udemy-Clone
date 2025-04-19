@@ -3,6 +3,8 @@ import Hero from '../../components/student/Hero'
 import Companies from '../../components/student/Companies'
 import CoursesSection from '../../components/student/CoursesSection'
 import TestimonialSection from '../../components/student/TestimonialSection'
+import CallToActions from '../../components/student/CallToActions'
+import Footer from '../../components/student/Footer'
 
 
 function Home() {
@@ -12,6 +14,8 @@ function Home() {
       <Companies />
       <CoursesSection />
       <TestimonialSection />
+      <CallToActions />
+      <Footer />
     </div>
   )
 }
