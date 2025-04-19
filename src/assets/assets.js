@@ -8,6 +8,7 @@ import paypal_logo from "./paypal.svg";
 import walmart_logo from "./walmart.svg";
 import accenture_logo from "./accenture.svg";
 import star from './star.svg'
+import cross_icon from './cross_icon.svg'
 
 export const assets = {
   logo,
@@ -19,7 +20,8 @@ export const assets = {
   accenture_logo,
   walmart_logo,
   paypal_logo,
-  star
+  star,
+  cross_icon
 };
 
 export const courses = [
