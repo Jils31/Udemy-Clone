@@ -14,7 +14,6 @@ A modern learning management system built with React, Vite, and TailwindCSS that
 - Detailed course views with curriculum structure
 - Integrated YouTube videos for course content
 - Interactive course navigation
-- Progress tracking system
 
 ### User Interface
 - Responsive design for all screen sizes
@@ -31,14 +30,14 @@ A modern learning management system built with React, Vite, and TailwindCSS that
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework:** React 19.0.0
-- **Build Tool:** Vite 6.2.0
-- **Styling:** TailwindCSS 4.1.4
+- **Frontend Framework:** React
+- **Build Tool:** Vite 
+- **Styling:** TailwindCSS 
 - **Authentication:** Clerk
-- **Routing:** React Router DOM 7.5.0
+- **Routing:** React Router DOM 
 - **State Management:** React Context API
 - **Video Integration:** YouTube API
-- **Animations:** Framer Motion 12.7.3
+- **Animations:** Framer Motion 
 - **Code Quality:** ESLint
 
 ## 🚀 Getting Started
@@ -160,14 +159,3 @@ npm run lint     # Run ESLint
 3. Commit your changes
 4. Push to the branch
 5. Open a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👏 Acknowledgments
-
-- Udemy for inspiration
-- React community
-- TailwindCSS team
-- Clerk team
