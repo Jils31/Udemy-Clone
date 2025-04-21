@@ -12,9 +12,13 @@
   "dependencies": {
     "@clerk/clerk-react": "^5.28.2",
     "@tailwindcss/vite": "^4.1.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "framer-motion": "^12.7.3",
     "humanize-duration": "^3.32.1",
     "lucide-react": "^0.488.0",
+    "node-fetch": "^3.3.2",
     "quill": "^2.0.3",
     "rc-progress": "^4.0.0",
     "react": "^19.0.0",

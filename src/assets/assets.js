@@ -12,6 +12,7 @@ import cross_icon from './cross_icon.svg'
 import downArrow from './down-arrow.png'
 import timeleft from './time-left.png'
 import book from './book.png'
+import udemyIcon from '../../public/udemy.svg'
 
 export const assets = {
   logo,
@@ -27,7 +28,8 @@ export const assets = {
   cross_icon,
   downArrow,
   timeleft,
-  book
+  book,
+  udemyIcon
 };
 
 export const courses = [
@@ -37,7 +39,7 @@ export const courses = [
     provider: "Udemy",
     rating: 4,
     reviews: 4,
-    price: "$39.99",
+    price: "3999/-",
     imageUrl: "/image.png",
     description:
       "Dive into the fundamentals of JavaScript, the language powering the modern web. This comprehensive course covers variables, data types, functions, DOM manipulation, event handling, and basic programming concepts. Perfect for beginners, you'll learn through hands-on projects including interactive webpages and simple applications. By the end of this course, you'll have the skills to write clean, functional JavaScript code and understand how to implement essential web functionality.",
@@ -48,7 +50,7 @@ export const courses = [
     provider: "Udemy",
     rating: 4,
     reviews: 5,
-    price: "$67.99",
+    price: "6799/-",
     imageUrl: "/image2.jpg",
     description:
       "Take your Python skills to the next level with this advanced programming course. You'll explore complex data structures, object-oriented programming principles, decorators, generators, and advanced library usage. The curriculum covers performance optimization, testing frameworks, and best practices for large-scale applications. Through challenging projects and real-world examples, you'll learn how to write efficient, maintainable Python code suitable for data science, web development, and automation tasks. Previous Python experience is recommended.",
@@ -59,7 +61,7 @@ export const courses = [
     provider: "Udemy",
     rating: 3,
     reviews: 5,
-    price: "$55.99",
+    price: "5599/-",
     imageUrl: "/image3.jpg",
     description:
       "Master the fundamentals of cloud computing with this essential course. You'll learn about infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) models across major cloud providers. Topics include virtual machines, containers, serverless computing, cloud storage solutions, and network configuration. Gain hands-on experience deploying applications, managing resources, and implementing security best practices. By course completion, you'll understand how to architect scalable, cost-effective cloud solutions for diverse business needs.",
@@ -70,7 +72,7 @@ export const courses = [
     provider: "Udemy",
     rating: 4,
     reviews: 3,
-    price: "$59.49",
+    price: "5949/-",
     imageUrl: "/image4.jpg",
     description:
       "Build a solid foundation in cybersecurity concepts and practices essential for the digital age. This course covers threat identification, vulnerability assessment, encryption principles, secure coding practices, and common attack vectors. You'll learn about authentication systems, access control, network security, and incident response protocols. Through practical exercises and case studies, you'll develop the skills to protect systems and data from malicious actors. Suitable for IT professionals, developers, and anyone interested in understanding modern security challenges.",
@@ -81,7 +83,7 @@ export const courses = [
     provider: "Udemy",
     rating: 0,
     reviews: 0,
-    price: "$62.99",
+    price: "6299/-",
     imageUrl: "/image5.jpg",
     description:
       "Explore the exciting intersection of data science and machine learning in this comprehensive course. You'll learn data collection, cleaning, analysis, and visualization techniques using powerful libraries like Pandas, NumPy, and Matplotlib. The course progresses through statistical analysis, supervised and unsupervised learning algorithms, feature engineering, and model evaluation. Through hands-on projects analyzing real datasets, you'll build predictive models and gain insights into complex data. Perfect for aspiring data scientists and analysts looking to harness the power of machine learning.",
@@ -92,7 +94,7 @@ export const courses = [
     provider: "Udemy",
     rating: 5,
     reviews: 1,
-    price: "$74.99",
+    price: "7499/-",
     imageUrl: "/image6.jpg",
     description:
       "Become a full-stack web developer in this intensive bootcamp focusing on modern JavaScript frameworks, particularly React. You'll master frontend development with HTML5, CSS3, JavaScript, and React while building responsive, interactive user interfaces. The course covers state management, component architecture, routing, and API integration. On the backend, you'll learn Node.js, Express, and database integration. Through three complete projects, you'll develop real-world applications from conception to deployment, preparing you for professional web development roles.",
@@ -103,7 +105,7 @@ export const courses = [
     provider: "Udemy",
     rating: 5,
     reviews: 1,
-    price: "$71.99",
+    price: "7199/-",
     imageUrl: "/image7.jpg",
     description:
       "Harness Python's powerful ecosystem for data science in this comprehensive course. You'll explore data manipulation with Pandas, numerical computing with NumPy, and visualization with Matplotlib and Seaborn. The curriculum covers statistical analysis, hypothesis testing, and machine learning implementations using Scikit-learn. You'll work through real-world data problems, from data cleaning to predictive modeling and result interpretation. The course emphasizes practical skills with Jupyter notebooks and reproducible workflows, preparing you for data analysis roles across industries.",
@@ -114,7 +116,7 @@ export const courses = [
     provider: "Udemy",
     rating: 4,
     reviews: 1,
-    price: "$50.99",
+    price: "5099/-",
     imageUrl: "/image8.jpg",
     description:
       "Begin your cybersecurity journey with this foundational course covering essential security concepts and practices. You'll learn about threat landscapes, common vulnerabilities, security frameworks, and risk assessment methodologies. The course explores authentication mechanisms, encryption basics, network security, and social engineering defense. Through hands-on labs and real-world case studies, you'll develop practical skills to protect digital assets and understand cybersecurity's role in modern organizations. Perfect for beginners looking to enter the cybersecurity field or professionals wanting to incorporate security principles into their work.",
@@ -169,8 +171,8 @@ export const eachCourseDetails = [
     lessons: 4,
     rating: 4,
     students: 10,
-    price: "$67.99",
-    originalPrice: "$79.99",
+    price: "6799/-",
+    originalPrice: "7999/-",
     discount: "15% off",
     instructor: "GreatStack",
     imageUrl: "/image2.jpg",
@@ -208,8 +210,8 @@ export const eachCourseDetails = [
     lessons: 8,
     rating: 4.2,
     students: 120,
-    price: "$49.99",
-    originalPrice: "$69.99",
+    price: "4999/-",
+    originalPrice: "6999/-",
     discount: "28% off",
     instructor: "WebStart Academy",
     imageUrl: "/image.png",
@@ -246,8 +248,8 @@ export const eachCourseDetails = [
     lessons: 7,
     rating: 4.5,
     students: 200,
-    price: "$59.99",
-    originalPrice: "$79.99",
+    price: "5999/-",
+    originalPrice: "7999/-",
     discount: "25% off",
     instructor: "CloudXperts",
     imageUrl: '/image3.jpg',
@@ -284,8 +286,8 @@ export const eachCourseDetails = [
     lessons: 5,
     rating: 4.3,
     students: 180,
-    price: "$54.99",
-    originalPrice: "$74.99",
+    price: "5499/-",
+    originalPrice: "7499/-",
     discount: "26% off",
     instructor: "CyberSecure Academy",
     imageUrl: '/image4.jpg',
@@ -322,8 +324,8 @@ export const eachCourseDetails = [
     lessons: 9,
     rating: 4.6,
     students: 250,
-    price: "$69.99",
-    originalPrice: "$89.99",
+    price: "6999/-",
+    originalPrice: "8999/-",
     discount: "22% off",
     instructor: "DataPro Institute",
     imageUrl: '/image5.jpg',
@@ -360,8 +362,8 @@ export const eachCourseDetails = [
     lessons: 11,
     rating: 4.7,
     students: 300,
-    price: "$79.99",
-    originalPrice: "$99.99",
+    price: "7999/-",
+    originalPrice: "9999/-",
     discount: "20% off",
     instructor: "FullStack School",
     imageUrl: '/image6.jpg',
@@ -398,8 +400,8 @@ export const eachCourseDetails = [
     lessons: 7,
     rating: 4.4,
     students: 150,
-    price: "$58.99",
-    originalPrice: "$74.99",
+    price: "5899/-",
+    originalPrice: "7499/-",
     discount: "21% off",
     instructor: "DataCraft Academy",
     imageUrl: '/image7.jpg',
@@ -427,7 +429,7 @@ export const eachCourseDetails = [
         duration: "4 hours"
       },
       {
-        moduleTitle: "Defense Techniques",
+        moduleTitle: "Computer Defense Techniques",
         lectures: 3,
         duration: "5 hours"
       }
@@ -436,8 +438,8 @@ export const eachCourseDetails = [
     lessons: 5,
     rating: 4.1,
     students: 90,
-    price: "$39.99",
-    originalPrice: "$59.99",
+    price: "3999/-",
+    originalPrice: "5999/-",
     discount: "33% off",
     instructor: "SecureStart Academy",
     imageUrl: '/image8.jpg',
