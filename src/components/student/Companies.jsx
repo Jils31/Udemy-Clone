@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 
+// This contains the logos of the Companies which are coming from the assets.js file
 function Companies() {
   return (
     <div className='pt-16'>

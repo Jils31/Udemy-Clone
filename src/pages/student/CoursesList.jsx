@@ -8,11 +8,14 @@ import Footer from "../../components/student/Footer";
 
 function CoursesList() {
   const navigate = useNavigate();
+    // Get courses from global context
   const { allCourses } = useContext(AppContext);
+  //Get search input from URL params
   const { input } = useParams();
 
   const [filteredCourse, setFilteredCourse] = useState([]);
 
+   // Filter courses based on search input
   useEffect(() => {
     if (allCourses && allCourses.length > 0) {
       const tempCourses = allCourses.slice();

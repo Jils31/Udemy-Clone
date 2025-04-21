@@ -10,3 +10,5 @@ export const fetchYoutubeVideos = async (query) => {
     return null;
   }
 };
+
+//This includes the function for fetching the data from the youtube

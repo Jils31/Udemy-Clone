@@ -9,13 +9,16 @@ import { fetchYoutubeVideos } from "../../utils/youtube";
 function CourseDetails() {
   const { id } = useParams();
   const [courseData, setCourseData] = useState(null);
+   // Stores YouTube videos for each module
   const [moduleVideos, setModuleVideos] = useState({});
   const { allCoursesDetails } = useContext(AppContext);
 
+   // Fetches course data and related YouTube videos
   const fetchCourseData = async () => {
     const findCourse = allCoursesDetails.find((course) => course._id === id);
     setCourseData(findCourse);
 
+     // Fetch relevant YouTube videos for each module
     if (findCourse) {
       const videos = {};
       for (const chapter of findCourse.courseStructure) {
@@ -38,6 +41,7 @@ function CourseDetails() {
       }));
     };
 
+      // Load course data on component mount
   useEffect(() => {
     fetchCourseData();
   }, []);

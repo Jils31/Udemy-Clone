@@ -1,10 +1,13 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 
+// Main footer component - dark theme with responsive layout
 function Footer() {
   return (
     <footer className="bg-gray-900 md:px-36 text-left w-full mt-10">
+      {/* Main content wrapper - splits into 3 columns on desktop */}
       <div className="flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30">
+        {/* Brand section with logo and description */}
         <div className="flex flex-col md:items-start items-center w-full">
           <div className="flex items-center">
           <img src={assets.udemyIcon} alt="logo" className="w-12 h-12"/>
@@ -16,6 +19,7 @@ function Footer() {
           </p>
         </div>
 
+        {/* Quick links section - hidden on mobile */}
         <div className="flex flex-col md:items-start items-center w-full">
           <h2 className="font-semibold text-white mb-5">Company</h2>
           <ul className="flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2">

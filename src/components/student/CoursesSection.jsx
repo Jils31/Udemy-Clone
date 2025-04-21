@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 import CourseCard from "./CourseCard";
 
-
+//This includes the section of the courses on the main landing page and it shows 4 for now which redirect you to the course list page on clicking show all courses
 function CoursesSection() {
-  const {allCourses} = useContext(AppContext)
+  const {allCourses} = useContext(AppContext) //use global states and the data 
   return (
     <div className="py-16 md:px-40 px-8">
       <h2 className="text-3xl font-medium text-gray-800">
@@ -21,7 +21,8 @@ function CoursesSection() {
         {allCourses.slice(0,4).map((course, index)=>(
           <CourseCard key={index} course={course}/>
         ))}
-      </div>
+      </div>  
+      {/* The above container shows the 4 courses on the landing page */}
 
       <Link
         to={"/course-list"}
