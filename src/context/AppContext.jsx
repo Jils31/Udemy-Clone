@@ -11,11 +11,10 @@ export function AppContextprovider({ children }) {
     setAllCoursesDetails(eachCourseDetails);
   };
 
-  const[isEducator, setIsEducator] = useState(true)
   useEffect(() => {
     fetchAllCourses();
   }, []);
   return (
-    <AppContext.Provider value={{ allCourses, isEducator,setIsEducator, allCoursesDetails }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ allCourses, allCoursesDetails }}>{children}</AppContext.Provider>
   );
 }

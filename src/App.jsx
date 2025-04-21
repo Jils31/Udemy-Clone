@@ -7,16 +7,7 @@ import Navbar from './components/student/Navbar'
 
 const CoursesList = lazy(() => import("./pages/student/CoursesList"));
 const CourseDetails = lazy(() => import("./pages/student/CourseDetails"));
-const MyEnrollments = lazy(() => import("./pages/student/MyEnrollments"));
-const Player = lazy(() => import("./pages/student/Player"));
 
-const Educator = lazy(() => import("./pages/educator/Educator"));
-const Dashboard = lazy(() => import("./pages/educator/Dashboard"));
-const AddCourse = lazy(() => import("./pages/educator/AddCourse"));
-const MyCourse = lazy(() => import("./pages/educator/MyCourses"));
-const StudentsEnrolled = lazy(() =>
-  import("./pages/educator/StudentsEnrolled")
-);
 
 function App() {
   const isEducatorRoute = useMatch('/educator/*')
