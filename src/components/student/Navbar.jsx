@@ -15,13 +15,15 @@ function Navbar() {
 
   return (
     <div className="flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 bg-white">
+      <div className="flex items-center gap-2">
       <img
-        src={assets.logo}
+        src={assets.udemyIcon}
         alt="Logo"
-        className="w-28 lg:w-32 cursor-pointer"
+        className="w-12 lg:w-12 cursor-pointer"
         onClick={() => navigate("/")}
       />
-
+      <p onClick={() => navigate("/")} className="font-semibold text-2xl cursor-pointer">Udemy</p>
+      </div>
       {/* For Desktop and large screens */}
       <div className="hidden md:flex items-center gap-5 text-gray-500">
         <div className="flex items-center gap-5">
